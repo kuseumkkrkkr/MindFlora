@@ -10,7 +10,7 @@ But, this is not a real making Memories it's a kind of efficient way to manage D
 
 Main Idea
 - all chat has this and AI could get 3 kewords and load a Emotion keword of it. this is the source of Impression Weights.
-- Impression Weights : A main value of impression
+- Impression Weights : A main value of surprise
 
 this Weights gets out from these weights
 - valence: Value of positive or nagative (0 ~ 2) -> 10%
