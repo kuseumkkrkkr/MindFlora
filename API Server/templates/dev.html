@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f0f0f0; }
+        form { margin-top: 20px; }
+        button { padding: 8px 16px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>🌐 Developer Dashboard</h1>
+
+    <form method="post" action="/generate_key">
+        <button type="submit">🔑 새로운 API 키 생성</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>API Key</th>
+            <th>Sensor 1</th>
+            <th>Sensor 2</th>
+            <th>Sensor 3</th>
+            <th>Sensor 4</th>
+            <th>On/Off</th>
+            <th>LED</th>
+        </tr>
+        {% for d in devices %}
+        <tr>
+            <td>{{ d[0] }}</td>
+            <td>{{ d[1] }}</td>
+            <td>{{ d[2] }}</td>
+            <td>{{ d[3] }}</td>
+            <td>{{ d[4] }}</td>
+            <td>{{ d[5] }}</td>
+            <td>{{ d[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
