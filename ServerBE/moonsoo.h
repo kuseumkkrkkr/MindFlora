@@ -163,17 +163,17 @@ ParsedPacket get_binary(const string& api_key) {
 }
 
 /*int main() {
-    string api_key = "1C3BFB6C";
+    string api_key = "";
     post_binary(api_key, 10, 20, 30, 40);
     onoff_bin(api_key, true, 100);
 
     ParsedPacket pkt = get_binary(api_key);
 
-    cout << "== ÆÄ½ÌµÈ °á°ú ==" << endl;
-    cout << "¼¾¼­1: " << (int)pkt.sensor1 << endl;
-    cout << "¼¾¼­2: " << (int)pkt.sensor2 << endl;
-    cout << "¼¾¼­3: " << (int)pkt.sensor3 << endl;
-    cout << "¼¾¼­4: " << (int)pkt.sensor4 << endl;
+    cout << "== íŒŒì‹±ëœ ê²°ê³¼ ==" << endl;
+    cout << "ì„¼ì„œ1: " << (int)pkt.sensor1 << endl;
+    cout << "ì„¼ì„œ2: " << (int)pkt.sensor2 << endl;
+    cout << "ì„¼ì„œ3: " << (int)pkt.sensor3 << endl;
+    cout << "ì„¼ì„œ4: " << (int)pkt.sensor4 << endl;
     cout << "OnOff: " << pkt.onoff << endl;
     cout << "LED: " << (int)pkt.led << endl;
 
